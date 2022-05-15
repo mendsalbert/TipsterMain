@@ -1,6 +1,7 @@
 import Tipster from '../abis/Tipster.json'
 import React, { Component } from 'react';
 import ProfileHeader from './ProfileHeader';
+import { useParams } from 'react-router-dom';
 
 import Web3 from 'web3';
 import Notify from 'bnc-notify'
@@ -40,6 +41,8 @@ class Profile extends Component {
     }
   }
 
+
+  
   async loadBlockchainData() {
     const web3 = window.web3
     // Load accounts
@@ -69,6 +72,7 @@ class Profile extends Component {
       window.alert('Tipster contract not deployed to detected network.')
     }
   }
+
 
   captureFile = event => {
 
@@ -145,6 +149,9 @@ class Profile extends Component {
   }
 
   render() {
+    // const { id, author} = useParams();
+    // console.log(id, author);
+    console.log(this.props.state)
     return (
       <div className="container-fluid bg-white">
         <div className="row">

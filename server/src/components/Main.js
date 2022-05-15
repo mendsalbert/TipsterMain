@@ -86,7 +86,14 @@ class Main extends Component {
                 return(
                   <div className="card mb-4" key={image.id} >
                     <div className="card-header">
-                    <Link to={`/profile/${image.id}` + image.author}
+                    {/* <Link to={`/profile/${image.id}` + image.author} */}
+                    <Link to={{
+                      pathname:'/profile',
+                      state: {
+                        id:image.id,
+                        author:image.author
+                      }
+                    }}
                     >
                       <img
                         className='mr-2'
