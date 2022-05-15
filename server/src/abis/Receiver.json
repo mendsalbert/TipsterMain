@@ -1,0 +1,184 @@
+{
+  "contractName": "Receiver",
+  "abi": [
+    {
+      "payable": true,
+      "stateMutability": "payable",
+      "type": "fallback"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"payable\":true,\"stateMutability\":\"payable\",\"type\":\"fallback\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/C/Users/Brilliant/Documents/web3/decentragram/server/src/contracts/Receiver.sol\":\"Receiver\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/C/Users/Brilliant/Documents/web3/decentragram/server/src/contracts/Receiver.sol\":{\"keccak256\":\"0x504c259d826afef43765f266841eb7a3e6eb40613c05803a922d8842be95a01f\",\"urls\":[\"bzz-raw://a891761ae6352a86db4963cb943830d7eb4aa31b271e81e15034dc38cc0317d4\",\"dweb:/ipfs/QmPh3E59aK51t2t3XszuTtZcJNkVEKFuSG4RVMv7jd9QTu\"]}},\"version\":1}",
+  "bytecode": "0x6080604052348015600f57600080fd5b50603b80601d6000396000f3fe608060405200fea265627a7a72315820d1ad2c15eac9544af7e9224284e9f936a09d20beadb04809be413bbbb21169a064736f6c63430005100032",
+  "deployedBytecode": "0x608060405200fea265627a7a72315820d1ad2c15eac9544af7e9224284e9f936a09d20beadb04809be413bbbb21169a064736f6c63430005100032",
+  "sourceMap": "27:58:1:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;27:58:1;;;;;;;",
+  "deployedSourceMap": "27:58:1:-;;;",
+  "source": "pragma solidity ^0.5.0;\r\n\r\ncontract Receiver {\r\n    function() payable external {}\r\n}",
+  "sourcePath": "C:/Users/Brilliant/Documents/web3/decentragram/server/src/contracts/Receiver.sol",
+  "ast": {
+    "absolutePath": "/C/Users/Brilliant/Documents/web3/decentragram/server/src/contracts/Receiver.sol",
+    "exportedSymbols": {
+      "Receiver": [
+        63
+      ]
+    },
+    "id": 64,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 58,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:1"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 63,
+        "linearizedBaseContracts": [
+          63
+        ],
+        "name": "Receiver",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": {
+              "id": 61,
+              "nodeType": "Block",
+              "src": "80:2:1",
+              "statements": []
+            },
+            "documentation": null,
+            "id": 62,
+            "implemented": true,
+            "kind": "fallback",
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 59,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "60:2:1"
+            },
+            "returnParameters": {
+              "id": 60,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "80:0:1"
+            },
+            "scope": 63,
+            "src": "52:30:1",
+            "stateMutability": "payable",
+            "superFunction": null,
+            "visibility": "external"
+          }
+        ],
+        "scope": 64,
+        "src": "27:58:1"
+      }
+    ],
+    "src": "0:85:1"
+  },
+  "legacyAST": {
+    "absolutePath": "/C/Users/Brilliant/Documents/web3/decentragram/server/src/contracts/Receiver.sol",
+    "exportedSymbols": {
+      "Receiver": [
+        63
+      ]
+    },
+    "id": 64,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 58,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:1"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 63,
+        "linearizedBaseContracts": [
+          63
+        ],
+        "name": "Receiver",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": {
+              "id": 61,
+              "nodeType": "Block",
+              "src": "80:2:1",
+              "statements": []
+            },
+            "documentation": null,
+            "id": 62,
+            "implemented": true,
+            "kind": "fallback",
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 59,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "60:2:1"
+            },
+            "returnParameters": {
+              "id": 60,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "80:0:1"
+            },
+            "scope": 63,
+            "src": "52:30:1",
+            "stateMutability": "payable",
+            "superFunction": null,
+            "visibility": "external"
+          }
+        ],
+        "scope": 64,
+        "src": "27:58:1"
+      }
+    ],
+    "src": "0:85:1"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.16+commit.9c3226ce.Emscripten.clang"
+  },
+  "networks": {
+    "3": {
+      "events": {},
+      "links": {},
+      "address": "0x387CA5fD85492978D52d1f7B1d1581Ce3071069e",
+      "transactionHash": "0xf768252ea47da72217a1a491486149f55269ed7733e2cdf3a739b8a7e12a3f2c"
+    }
+  },
+  "schemaVersion": "3.2.3",
+  "updatedAt": "2022-05-07T14:54:01.370Z",
+  "networkType": "ethereum",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}
