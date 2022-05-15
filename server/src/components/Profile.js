@@ -151,8 +151,7 @@ class Profile extends Component {
   render() {
     // const { id, author} = useParams();
     // console.log(id, author);
-    console.log(this.props.location.state)
-    console.log("testing")
+    console.log(this.props.location.state.id)
     return (
       <div className="container-fluid bg-white">
         <div className="row">
@@ -174,6 +173,7 @@ class Profile extends Component {
               tipImageOwner={this.tipImageOwner}
           />
         }
+        <p>{console.log(this.props.location.state.id)}</p>
         
 
         </div>
