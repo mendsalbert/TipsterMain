@@ -152,6 +152,7 @@ class Profile extends Component {
     // const { id, author} = useParams();
     // console.log(id, author);
     console.log(this.props.location.state)
+    console.log("testing")
     return (
       <div className="container-fluid bg-white">
         <div className="row">

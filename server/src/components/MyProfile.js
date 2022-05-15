@@ -25,7 +25,7 @@ class MyProfile extends Component {
               : <span></span>
             }
                 </div>
-                <h2 className="text-white"><small className="text-white">{this.props.author}</small></h2>
+                <h2 className="text-white"><small className="text-white">{this.props.account}</small></h2>
                 <h5 className="text-white">0 Following 0 Followers</h5>
                 </div>
 
