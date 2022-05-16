@@ -157,7 +157,6 @@ class MyProfile extends Component {
                 return(
                   <div className="card mb-4" key={key} >
                     <div className="card-header">
-                    <a href="/profile" >
                       <img
                         className='mr-2'
                         width='30'
@@ -165,7 +164,6 @@ class MyProfile extends Component {
                         src={`data:image/png;base64,${new Identicon(image.author, 30).toString()}`}
                         alt='identicon'
                       />
-                      </a>
                       <small className="text-muted">{image.author}</small>
                     </div>
                     <ul id="imageList" className="list-group list-group-flush">
