@@ -151,7 +151,9 @@ class MyProfile extends Component {
                 <main role="main" className="col-lg-12 mt-5 ml-auto mr-auto" style={{ maxWidth: '700px' }}>
             
 
-            { this.props.images.map((image, key) => {
+            { this.props.images
+              .filter(image => image.author === this.props.account)
+              .map((image, key) => {
                 return(
                   <div className="card mb-4" key={key} >
                     <div className="card-header">
