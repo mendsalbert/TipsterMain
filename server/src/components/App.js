@@ -161,7 +161,7 @@ class App extends Component {
         <Routes>
         <Route path='/' exact element={<Home/>} />
         <Route path='/profile/:profileId' element={<Profile images={this.state.images} />} />
-        <Route path='/myprofile' element={<MyProfile account={this.state.account} images={this.state.images} />} />
+        <Route path='/myprofile' element={<MyProfile account={this.state.account} images={this.state.images} tipImageOwner={this.tipImageOwner} />} />
         <Route path='/explore' element={<Explore images={this.state.images} />} />
         <Route path='/messagemain' element={<MessageMain/>} />
         <Route path='/pay' element={<Pay/>} />
