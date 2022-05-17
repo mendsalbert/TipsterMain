@@ -51,7 +51,7 @@ class ProfileHeader extends Component {
                   </div>
 
                   <div className="col" align="center">
-                    <div className="mt-5 border-4 rounded-circle">
+                    <div className="border-4 rounded-circle">
                       <img
                         className="border-4 rounded-circle"
                         width="80"
