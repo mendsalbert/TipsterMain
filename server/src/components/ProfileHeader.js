@@ -1,7 +1,5 @@
 import React, { Component } from "react";
 import Identicon from "identicon.js";
-import { Button } from "react-bootstrap";
-import * as IoIcons from "react-icons/io";
 import { Modal } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
@@ -44,9 +42,12 @@ class ProfileHeader extends Component {
               return (
                 <div>
                   <div className="col mt-5">
-                    <Button variant="outline-success" type="submit">
-                      <IoIcons.IoMdChatboxes size={20} />
-                    </Button>
+                  <button
+                      className="button button1"
+                      onClick={this.handleClick}
+                    >
+                      {this.state.buttonText}
+                    </button>
                   </div>
 
                   <div className="col" align="center">
@@ -170,15 +171,6 @@ class ProfileHeader extends Component {
                       })}
                     </Modal.Body>
                   </Modal>
-
-                  <div className="col mt-5" align="right">
-                    <button
-                      className="button button1"
-                      onClick={this.handleClick}
-                    >
-                      {this.state.buttonText}
-                    </button>
-                  </div>
                 </div>
               );
             })}
