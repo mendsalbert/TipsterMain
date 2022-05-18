@@ -2,17 +2,16 @@ import React, { Component } from "react";
 import Identicon from "identicon.js";
 import * as FaIcons from "react-icons/fa";
 import { RWebShare } from "react-web-share";
-import { Modal } from "react-bootstrap";
 
 import { Link } from "react-router-dom";
 
 class Main extends Component {
-  state = {
-    isOpen: false,
-  };
+  // state = {
+  //   isOpen: false,
+  // };
 
-  openModal = () => this.setState({ isOpen: true });
-  closeModal = () => this.setState({ isOpen: false });
+  // openModal = () => this.setState({ isOpen: true });
+  // closeModal = () => this.setState({ isOpen: false });
 
   render() {
     return (
@@ -41,46 +40,7 @@ class Main extends Component {
                     this.upload.click();
                   }}
                 />
-                <FaIcons.FaPen
-                  size={50}
-                  className="shadow p-3 mb-3 mr-3"
-                  color="#fff"
-                  onClick={this.openModal}
-                />
 
-                <Modal
-                  show={this.state.isOpen}
-                  onHide={this.closeModal}
-                  dialogClassName="modal-90w"
-                  aria-labelledby="contained-modal-title-vcenter"
-                  centered
-                  size="lg"
-                >
-                  <Modal.Header closeButton>
-                    <Modal.Title>Your Post</Modal.Title>
-                  </Modal.Header>
-                  <Modal.Body>
-                    <form
-                      onSubmit={(event) => {
-                        event.preventDefault();
-                      }}
-                    >
-                      <input
-                        type="text"
-                        className="form-control mt-3"
-                        placeholder="Say Something"
-                        required
-                      />
-
-                      <button
-                        type="submit"
-                        className="btn btn-success btn-block btn-lg mt-3"
-                      >
-                        Post
-                      </button>
-                    </form>
-                  </Modal.Body>
-                </Modal>
 
                 <input
                   ref={(ref) => (this.upload = ref)}
@@ -165,7 +125,6 @@ class Main extends Component {
                           )}{" "}
                           ETH
                         </small>
-                        {/* <CommentModal /> */}
                         <RWebShare
                           data={{
                             text: "Hi, check out this post on Tipster",

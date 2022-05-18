@@ -34,13 +34,6 @@ class ProfileBody extends Component {
                       />
                     </a>
                     <small className="text-muted">{image.author}</small>
-                    <Button
-                      className="float-right"
-                      variant="outline-success"
-                      type="submit"
-                    >
-                      <IoIcons.IoMdSend size={20} />
-                    </Button>
                   </div>
                   <ul id="imageList" className="list-group list-group-flush">
                     <li className="list-group-item">
