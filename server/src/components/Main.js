@@ -14,6 +14,7 @@ class Main extends Component {
 
   // openModal = () => this.setState({ isOpen: true });
   // closeModal = () => this.setState({ isOpen: false });
+  
 
   render() {
     return (
@@ -169,6 +170,7 @@ class Main extends Component {
             <Button
             variant="outline-success"
             type="submit"
+            onClick={this.props.images.sort((a, b) => a - b)}
           >
             <IoIcons.IoMdRefresh size={23} />
         </Button>
