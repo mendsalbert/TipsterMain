@@ -26,7 +26,7 @@ class ProfileHeader extends Component {
 
   render() {
     return (
-      <div className="container-fluid bg-dark mt-5">
+      <div className="container-fluid bg-dark mt-3">
         <div className="row">
           {this.props.images
             .filter(
