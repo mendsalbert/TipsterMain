@@ -1,5 +1,4 @@
 import Tipster from "../abis/Tipster.json";
-import React from 'react';
 import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Switch, useLocation } from "react-router-dom";
 import Web3 from "web3";
