@@ -1,14 +1,10 @@
 import React, { Component } from "react";
-
-import { Button } from "react-bootstrap";
-import * as IoIcons from "react-icons/io";
 import Identicon from "identicon.js";
 import * as FaIcons from "react-icons/fa";
 import { RWebShare } from "react-web-share";
 
 class ProfileBody extends Component {
   render() {
-    // console.log(this.props.images);
     return (
       <div className="container-fluid bg-white mt-5">
         <div className="row">
