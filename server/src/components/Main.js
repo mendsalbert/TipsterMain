@@ -74,7 +74,7 @@ class Main extends Component {
               </form>
               <p>&nbsp;</p>
 
-              {this.props.images.map((image) => {
+              {this.props.images.sort((a, b) => a.tipAmount - b.tipAmount).map((image) => {
                 console.log(image.author);
                 console.log(image.id.toString());
                 return (
@@ -170,7 +170,7 @@ class Main extends Component {
             <Button
             variant="outline-success"
             type="submit"
-            onClick={this.props.images.sort((a, b) => a - b)}
+            onClick={() => window.location.reload(false)}
           >
             <IoIcons.IoMdRefresh size={23} />
         </Button>
