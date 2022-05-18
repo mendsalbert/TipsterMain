@@ -165,9 +165,8 @@ class Main extends Component {
                 );
               })}
             </div>
-            <div className="d-flex fixed-bottom m-3">
+            <div className="d-flex float-right fixed-bottom m-3">
             <Button
-            className="float-right"
             variant="outline-success"
             type="submit"
           >
