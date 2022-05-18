@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import Identicon from "identicon.js";
 import * as FaIcons from "react-icons/fa";
+import { Button } from "react-bootstrap";
+import * as IoIcons from 'react-icons/io';
 import { RWebShare } from "react-web-share";
 
 import { Link } from "react-router-dom";
@@ -162,6 +164,14 @@ class Main extends Component {
                   </div>
                 );
               })}
+            </div>
+            <div className="d-flex fixed-bottom m-3">
+            <Button
+            variant="outline-success"
+            type="submit"
+          >
+            <IoIcons.IoMdRefresh size={23} />
+        </Button>
             </div>
           </main>
         </div>
