@@ -181,7 +181,7 @@ class App extends Component {
             />
             <Route path="/messagemain" element={<MessageMain />} />
             <Route path="/pay" element={<Pay />} />
-            <Route path="/dm" element={<DirectMessage />} />
+            <Route path="/dm" element={<DirectMessage images={this.state.images} />} />
           </Routes>
         </Router>
       </div>

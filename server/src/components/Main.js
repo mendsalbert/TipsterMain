@@ -140,6 +140,14 @@ class Main extends Component {
                         />
                       </Link>
                       <small className="text-muted">{image.author}</small>
+
+                      <Link
+                        to="/dm"
+                        state={{
+                          id: image.id.toString(),
+                          author: image.author,
+                        }}
+                      >
                       <Button
                         className="float-right"
                         variant="outline-success"
@@ -147,6 +155,7 @@ class Main extends Component {
                       >
                         <IoIcons.IoMdSend size={20} />
                       </Button>
+                      </Link>
                     </div>
                     <ul id="imageList" className="list-group list-group-flush">
                       <li className="list-group-item">

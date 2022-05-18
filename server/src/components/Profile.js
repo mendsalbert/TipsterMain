@@ -164,20 +164,10 @@ const Profile = (props) => {
   };
 
   console.log(usersPosts);
-  // const queryParams = new URLSearchParams(
-  //   "http://localhost:3002/profile/?id=4"
-  // );
-  // const id = queryParams.get("id");
-  // console.log(id);
-
-  // var url_string = "http://www.example.com/t.html?a=1&b=3&c=m2-m3-m4-m5"; //window.location.href
-  // var url = new URL(url_string);
-  // var c = url.searchParams.get("c");
-  // console.log(c);
+ 
   return (
     <div className="container-fluid bg-white">
       <div className="row">
-        {/* <Navbar account={this.state.account} /> */}
         {loading ? (
           <div id="loader" className="text-center mt-5">
             <p>Loading...</p>
@@ -194,7 +184,6 @@ const Profile = (props) => {
             tipImageOwner={tipImageOwner}
           />
         }
-        {/* <p>{console.log(this.props.location.state.id)}</p> */}
       </div>
     </div>
   );
