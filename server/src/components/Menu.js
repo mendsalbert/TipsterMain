@@ -25,7 +25,7 @@ return (
             <div className="offcanvas-body">
             <ul>
             <li><a href="/"><FaIcons.FaHome size={50} className='shadow p-3' /> Home</a></li>
-            <li><a href="/myprofile"><IoIcons.IoMdPerson size={50} className='shadow p-3' /> Profile</a></li>
+            <li><a href="/myprofile"><IoIcons.IoMdPerson size={50} className='shadow p-3' /> My Profile</a></li>
             <li><a href="/explore"><FaIcons.FaSearch size={50} className='shadow p-3' /> Explore</a></li>
             <li><a href="/messagemain"><IoIcons.IoMdChatboxes size={50} className='shadow p-3' /> Messages</a></li>
             </ul>
