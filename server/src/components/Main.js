@@ -1,14 +1,10 @@
 import React, { Component } from "react";
 import Identicon from "identicon.js";
 import * as FaIcons from "react-icons/fa";
-// import CommentModal from './CommentModal';
 import { RWebShare } from "react-web-share";
 import { Modal } from "react-bootstrap";
 
 import { Link } from "react-router-dom";
-
-import { Button } from "react-bootstrap";
-import * as IoIcons from "react-icons/io";
 
 class Main extends Component {
   state = {
@@ -141,21 +137,7 @@ class Main extends Component {
                       </Link>
                       <small className="text-muted">{image.author}</small>
 
-                      <Link
-                        to="/dm"
-                        state={{
-                          id: image.id.toString(),
-                          author: image.author,
-                        }}
-                      >
-                      <Button
-                        className="float-right"
-                        variant="outline-success"
-                        type="submit"
-                      >
-                        <IoIcons.IoMdSend size={20} />
-                      </Button>
-                      </Link>
+                      
                     </div>
                     <ul id="imageList" className="list-group list-group-flush">
                       <li className="list-group-item">

@@ -1,7 +1,6 @@
 import Tipster from "../abis/Tipster.json";
 import React, { Component } from "react";
 import Navbar from "./Navbar";
-// import Main from './Main'
 import Web3 from "web3";
 import Notify from "bnc-notify";
 import "./App.css";
@@ -11,8 +10,6 @@ import Profile from "./Profile";
 import MyProfile from "./MyProfile";
 import Explore from "./Explore";
 import MessageMain from "./MessageMain";
-import Pay from "./Pay";
-import DirectMessage from "./DirectMessage";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 //Declare IPFS
@@ -180,8 +177,6 @@ class App extends Component {
               element={<Explore images={this.state.images} />}
             />
             <Route path="/messagemain" element={<MessageMain />} />
-            <Route path="/pay" element={<Pay />} />
-            <Route path="/dm" element={<DirectMessage images={this.state.images} />} />
           </Routes>
         </Router>
       </div>

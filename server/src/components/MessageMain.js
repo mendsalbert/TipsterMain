@@ -1,7 +1,8 @@
 import React from 'react';
 import Login from './Login';
 import { useMoralis } from 'react-moralis';
-import MessageList from './MessageList';
+import Header from './Header';
+import Message from './Message';
 
 const MessageMain = () => {
   const { isAuthenticated, logout}=useMoralis();
@@ -11,13 +12,11 @@ const MessageMain = () => {
     }
 
     return (
-      <div className="overflow-hidden">
-         <div className='m-auto'>
+      <div>
+            <Header />
+            <Message />
 
-         <MessageList />
-
-      </div>
-      </div>
+        </div>
     );
 }
 
