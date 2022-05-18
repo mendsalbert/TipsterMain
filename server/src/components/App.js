@@ -170,7 +170,7 @@ class App extends Component {
             />
             <Route
               path="/myprofile"
-              element={<MyProfile account={this.state.account} />}
+              element={<MyProfile images={this.state.images} account={this.state.account} />}
             />
             <Route
               path="/explore"
