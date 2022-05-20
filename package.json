@@ -1,0 +1,67 @@
+{
+  "name": "Tipster",
+  "version": "0.1.0",
+  "description": "description...",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "babel-polyfill": "6.26.0",
+    "babel-preset-env": "1.7.0",
+    "babel-preset-es2015": "6.24.1",
+    "babel-preset-stage-2": "6.24.1",
+    "babel-preset-stage-3": "6.24.1",
+    "babel-register": "6.26.0",
+    "bnc-notify": "^1.9.4",
+    "bootstrap": "4.3.1",
+    "chai": "4.2.0",
+    "chai-as-promised": "7.1.1",
+    "chai-bignumber": "3.0.0",
+    "dotenv": "^16.0.0",
+    "ethers": "^5.6.5",
+    "fortmatic": "^2.2.1",
+    "identicon.js": "^2.3.3",
+    "ipfs": "^0.62.2",
+    "ipfs-http-client": "^33.1.1",
+    "ipfs-pubsub-room": "^2.0.1",
+    "knockout": "^3.5.1",
+    "moralis": "^1.5.9",
+    "query-string": "^7.1.1",
+    "react": "^17.0.0",
+    "react-bootstrap": "1.0.0-beta.5",
+    "react-dom": "16.8.4",
+    "react-icons": "^4.3.1",
+    "react-moralis": "^1.3.5",
+    "react-router-dom": "^6.3.0",
+    "react-scripts": "2.1.3",
+    "react-web-share": "^1.1.5",
+    "truffle": "^5.0.5",
+    "truffle-hdwallet-provider": "^1.0.17",
+    "truffle-hdwallet-provider-privkey": "^0.3.0",
+    "web3": "1.0.0-beta.55"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "devDependencies": {
+    "autoprefixer": "^10.4.7",
+    "gh-pages": "^2.2.0",
+    "install": "^0.13.0",
+    "postcss": "^8.4.14",
+    "tailwindcss": "^3.0.24"
+  },
+  "main": "index.js",
+  "license": "MIT"
+}
